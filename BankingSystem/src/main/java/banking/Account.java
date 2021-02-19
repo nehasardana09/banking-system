@@ -14,7 +14,7 @@ public abstract class Account {
 	private AccountHolder accountHolder;
 	private Long accountNumber;
 	private int pin;
-  private double balance;
+  	private double balance;
 
 
 	protected Account(AccountHolder accountHolder, Long accountNumber, int pin, double startingDeposit) {
@@ -32,7 +32,7 @@ public abstract class Account {
 
 	public boolean validatePin(int attemptedPin) {
 		// complete the function
-        return true;
+        return attemptedPin == this.pin;
 	}
 
 	public double getBalance() {

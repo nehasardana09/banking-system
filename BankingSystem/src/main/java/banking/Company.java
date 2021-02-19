@@ -1,12 +1,13 @@
 package banking;
 
-public class Company  {
+public class Company extends AccountHolder {
   private String companyName;
 
 
 	public Company(String companyName, int taxId) {
     // complete the function
-    this.companyName = companyName;
+		super(taxId);
+    	this.companyName = companyName;
     
 	}
 

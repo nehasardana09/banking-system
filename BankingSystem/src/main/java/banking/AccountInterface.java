@@ -17,7 +17,7 @@ public interface AccountInterface {
 	public boolean validatePin(int attemptedPin);
 
 	/**
-	 * @return {@link Account#accountBalance}.
+	 * @return {@link Account#balance}.
 	 */
 	public double getBalance();
 
